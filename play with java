@@ -1,0 +1,113 @@
+
+
+//Original Code to print "Hello, World":
+
+
+
+
+
+public class Hello{
+public static void main(String args[]){
+Sydtem.out.println("Hello,World");
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------
+Case1- When class name is different from file name:
+
+File name Hello.java
+Class name HelloWorld
+
+Compile time error.
+hello.java:1: error: class HelloWorld is public, should be declared in a file named HelloWorld.java
+public class  HelloWorld
+
+
+----------------------------------------------------------------------------------------------------
+
+
+
+Case2- When main function is missing:
+
+Compiled Successfully.
+Error: Main method not found in class Hello, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+
+
+------------------------------------------------------------------------------------------------
+
+
+Case3- Delete .class file and then run the program:
+
+
+Error: Could not find or load main class Hello
+
+
+----------------------------------------------------------------------------------------
+
+
+Case4- Edit the .class file and then run the program:
+
+
+Error: A JNI error has occurred, please check your installation and try again
+Exception in thread "main" java.lang.ClassFormatError: Incompatible magic value 1547911516 in class file Hello
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at sun.launcher.LauncherHelper.checkAndLoadMain(LauncherHelper.java:495)
+
+
+
+
+
+---------------------------------------------------------------------------------------------
+
+
+Case5- Remove public from class:
+
+
+
+
+No Error
+Run Successfully
+
+
+
+---------------------------------------------------------------------------------------------------
+
+
+
+Case6- Remove public from main method:
+
+
+Error: Main method not found in class Hello, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+
+
+
+---------------------------------------------------------------------------------------------------
+
+
