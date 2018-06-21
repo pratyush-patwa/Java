@@ -25,7 +25,7 @@ Sydtem.out.println("Hello,World");
 
 
 ---------------------------------------------------------------------------------------------------
-Case1- When class name is different from file name:
+Case1- When class name is public and different from file name :
 
 File name Hello.java
 Class name HelloWorld
