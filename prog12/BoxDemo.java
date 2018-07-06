@@ -1,7 +1,9 @@
-/*public class Box{  /* If any class declared public but the file name is different from the class then compile time error*/
+/* If any class declared public but the file name is different from the class then compile time error
 
+If both class is public then cxompile time error will occur
 
-public class BoxDemo{	/*Save the file name with the name of class that contain the main function otherwise it will give a run time error*/
+Save the file name with the name of class that contain the main function otherwise it will give a run time error*/
+public class BoxDemo{	
 public static void main(String args[]){
 
 	Box box1 = new Box();
@@ -20,6 +22,7 @@ public static void main(String args[]){
 	double volume2= box2.l*box2.w*box2.d;
 
 	System.out.println("The volume is "+ volume2);
+/*inside for loop with every iteration a new object is used and its scope is inside the curly braces*/
 
 	for(int i=0;i<10;i++){
 	Box box = new Box();
@@ -29,11 +32,25 @@ public static void main(String args[]){
 	double volume= box.l*box.w*box.d;
 
 	System.out.println("The volume is "+ volume);
-	System.out.println("# of box is " + box.hashCode());
+	System.out.println("# of box is " + box.hashCode()); //hashcode is unique id of object
+
+
+	//assigining object Reference variable
+
+	Box b1 = new Box();
+	b1.l=2;
+	b1.w=3;
+	b1.d=4;
+	
+	Box b2 = b1;
+	double vol1 = b1.l*b1.w*b1.d ;
+	double vol2 = b2.l*b2.w*b1.d ;
+	System.out.println("The volume of vol1: " + vol1);
+	System.out.println("The volume of vol2: " + vol2);
 }
 }
 }
-class Box{  /* If any class declared public but the file name is different from the class then compile time error*/
+class Box{ 
 double w, l, d;
 }
 
