@@ -22,14 +22,15 @@ class LinkedList{
 
 
 	public static LinkedList insert(LinkedList list, int data){
-	
+		//Creating a new node with the given data
 		Node new_node = new Node(data);
 		new_node.next = null;
-	
+		
+		//Checking if list head is null or not if it is null assign the new node to the head
 		if(list.head==null){
 			list.head = new_node;
 		}
-
+		// else traverse throught the last node to enter the data
 		else{
 			Node last = list.head;
 
