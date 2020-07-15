@@ -1,3 +1,3 @@
 # Java
-Practicing java 
-Basic Java Syntax and OOps COncept
+Practicing java.
+Basic Java Syntax and OOps COncept.
